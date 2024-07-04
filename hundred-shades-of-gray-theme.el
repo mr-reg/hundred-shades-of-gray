@@ -39,10 +39,8 @@
  '(show-paren-match ((t (:background "gray50" :foreground "gray0" :bold t))))
  '(show-paren-mismatch ((t (:background "gray50" :foreground "gray0" :bold t :underline t))))
  '(minibuffer-prompt ((t (:weight bold :foreground "gray0"))))
- '(isearch ((t (:background "gray30" :foreground "gray0" :bold t))))
- '(lazy-highlight ((t (:background "gray30" :foreground "gray0"))))
  '(link ((t (:underline t))))
- 
+
  ;; mode line
  '(mode-line ((t (:box (:line-width -1 :color "gray70")
                        :background "gray60" :foreground "gray0"))))
@@ -93,10 +91,11 @@
  '(git-gutter:modified ((t (:background "gray80" :foreground "gray0"))))
  '(git-gutter:added ((t (:background "gray70" :foreground "gray0"))))
  '(git-gutter:deleted ((t (:background "gray80" :foreground "gray30"))))
- 
+
  ;; magit
  '(git-commit-summary ((t (:italic nil))))
- '(magit-diff-hunk-heading-highlight ((t (:background "gray20" :foreground "gray80"))))
+ '(magit-diff-hunk-heading-highlight ((t (:background "gray40" :foreground "gray100"))))
+ '(magit-diff-hunk-heading ((t (:background "gray70" :foreground "gray0"))))
  '(magit-diff-context-highlight ((t (:background "gray100" :foreground "gray20"))))
  '(magit-diff-added-highlight ((t (:background "gray70" :foreground "gray0"))))
  '(magit-diff-removed-highlight ((t (:background "gray80" :foreground "gray30"))))
@@ -108,6 +107,8 @@
  '(diff-hl-change ((t (:background "gray80" :foreground "gray0"))))
  '(diff-hl-insert ((t (:background "gray70" :foreground "gray0"))))
  '(diff-hl-delete ((t (:background "gray80" :foreground "gray30"))))
+ '(diff-added ((t (:background "gray70" :foreground "gray0"))))
+ '(diff-removed ((t (:background "gray80" :foreground "gray30"))))
  '(diff-refine-added ((t (:background nil :inherit nil :underline t :bold t))))
  '(diff-refine-changed ((t (:background nil :inherit nil :underline t :bold t))))
  '(diff-refine-removed ((t (:background nil :inherit nil :underline t :bold t))))
@@ -146,20 +147,27 @@
 
  ;; pinbar
  '(pinbar-default-face ((t (:inherit nil :background "gray100" :foreground nil))))
- '(pinbar-unselected-face ((t (:background nil :foreground "gray40"))))
- '(pinbar-selected-face 
+ '(pinbar-unselected-face ((t (:background "gray100" :foreground "gray30"))))
+ '(pinbar-selected-face
    ((t (:inherit nil :background "gray80" :foreground "gray0"
                  :box `(:line-width 5 :color "gray80" :style nil)))))
- '(pinbar-button-face 
-   ((t (:inherit nil :background "gray80" :foreground "gray0"
+ '(pinbar-button-face
+   ((t (:inherit nil :background "gray100" :foreground "gray0" :bold t
                  :box `(:line-width 5 :color "gray80" :style nil)))))
- '(pinbar-separator-face ((t (:height 30))))
+ '(pinbar-separator-face ((t (:height 30 :background "gray100"))))
 
  ;; sh
  '(sh-heredoc ((t (:foreground "gray50"))))
 
  ;; whitespace
  '(whitespace-space ((t (:background "gray100" :foreground "gray70"))))
+
+ ;; isearch
+ '(isearch ((t (:background "gray60" :foreground "gray0" :bold t))))
+ '(isearch-group-1 ((t (:background "gray80"))))
+ '(isearch-group-2 ((t (:background "gray80"))))
+ '(lazy-highlight ((t (:background "gray80" :foreground "gray0"))))
+
  )
 
 ;;;###autoload
@@ -169,4 +177,3 @@
    (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'hundred-shades-of-gray)
-
