@@ -40,6 +40,15 @@
  '(show-paren-mismatch ((t (:background "gray50" :foreground "gray0" :bold t :underline t))))
  '(minibuffer-prompt ((t (:weight bold :foreground "gray0"))))
  '(link ((t (:underline t))))
+ '(error ((t (:foreground "gray0" :bold t :underline t))))
+ '(warning ((t (:foreground "gray0" :underline t))))
+ '(success ((t (:foreground "gray0"))))
+ '(widget-field ((t (:foreground "gray0" :background "gray80"))))
+ '(custom-state ((t (:foreground "gray0"))))
+ '(shadow ((t (:foreground "gray30"))))
+
+ ;; dired
+ '(dired-marked ((t (:inherit 'error))))
 
  ;; mode line
  '(mode-line ((t (:box (:line-width -1 :color "gray70")
@@ -132,8 +141,9 @@
  '(term-color-white ((t (:background "gray100" :foreground "gray80"))))
 
  ;; hl line
- '(hl-line ((t (:background "gray70"))))
+ '(hl-line ((t (:background "gray80"))))
  '(highlight-current-line-face ((t (:inherit hl-line))))
+ '(highlight ((t (:background "gray85"))))
 
  ;; ido
  '(ido-first-match ((t (:bold t))))
@@ -167,6 +177,12 @@
  '(isearch-group-1 ((t (:background "gray80"))))
  '(isearch-group-2 ((t (:background "gray80"))))
  '(lazy-highlight ((t (:background "gray80" :foreground "gray0"))))
+
+ ;; kubel
+ '(kubel-status-running ((t (:foreground nil :inherit success))))
+ '(kubel-status-terminating ((t (:foreground nil :inherit warning))))
+ '(kubel-status-completed ((t (:foreground nil :inherit success))))
+ '(kubel-status-crash-loop-backoff ((t (:foreground nil :inherit error))))
 
  )
 
