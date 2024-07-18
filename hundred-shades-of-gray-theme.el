@@ -122,6 +122,16 @@
  '(diff-refine-changed ((t (:background nil :inherit nil :underline t :bold t))))
  '(diff-refine-removed ((t (:background nil :inherit nil :underline t :bold t))))
 
+ ;; ediff
+ '(ediff-current-diff-A ((t (:background "gray70" :foreground "gray0"))))
+ '(ediff-current-diff-B ((t (:background "gray70" :foreground "gray0"))))
+ '(ediff-fine-diff-A ((t (:background nil :inherit nil :underline t :bold t))))
+ '(ediff-fine-diff-B ((t (:background nil :inherit nil :underline t :bold t))))
+ '(ediff-even-diff-A ((t (:background "gray80" :foreground "gray20"))))
+ '(ediff-even-diff-B ((t (:background "gray80" :foreground "gray20"))))
+ '(ediff-odd-diff-A ((t (:background "gray80" :foreground "gray20"))))
+ '(ediff-odd-diff-B ((t (:background "gray80" :foreground "gray20"))))
+
  ;; ztree
  '(ztreep-diff-model-normal-face ((t (:foreground "gray60"))))
  '(ztreep-diff-model-diff-face ((t (:foreground "gray0" :underline t))))
