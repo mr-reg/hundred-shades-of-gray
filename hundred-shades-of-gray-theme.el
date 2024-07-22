@@ -106,11 +106,15 @@
  '(magit-diff-hunk-heading-highlight ((t (:background "gray40" :foreground "gray100"))))
  '(magit-diff-hunk-heading ((t (:background "gray70" :foreground "gray0"))))
  '(magit-diff-context-highlight ((t (:background "gray100" :foreground "gray20"))))
- '(magit-diff-added-highlight ((t (:background "gray70" :foreground "gray0"))))
- '(magit-diff-removed-highlight ((t (:background "gray80" :foreground "gray30"))))
+ '(magit-diff-added-highlight ((t (:background "gray70" :foreground "gray0" :underline t))))
+ '(magit-diff-removed-highlight ((t (:background "gray80" :foreground "gray30" :underline t))))
  '(magit-diff-context ((t (:background "gray100" :foreground "gray20"))))
  '(magit-diff-added ((t (:background "gray70" :foreground "gray0"))))
  '(magit-diff-removed ((t (:background "gray80" :foreground "gray30"))))
+ '(magit-section-highlight ((t (:foreground nil :background "gray80"))))
+ '(magit-section-heading ((t (:foreground "gray0" :bold t))))
+ '(magit-branch-local ((t (:foreground "gray0" :bold nil :underline t))))
+ '(magit-branch-remote ((t (:foreground "gray0" :bold nil :underline t))))
 
  ;; diff hl
  '(diff-hl-change ((t (:background "gray80" :foreground "gray0"))))
@@ -178,6 +182,7 @@
 
  ;; sh
  '(sh-heredoc ((t (:foreground "gray50"))))
+ '(sh-quoted-exec ((t (:foreground "gray0"))))
 
  ;; whitespace
  '(whitespace-space ((t (:background "gray100" :foreground "gray70"))))
