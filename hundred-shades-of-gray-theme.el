@@ -127,14 +127,14 @@
  '(diff-refine-removed ((t (:background nil :inherit nil :underline t :bold t))))
 
  ;; ediff
- '(ediff-current-diff-A ((t (:background "gray70" :foreground "gray0"))))
- '(ediff-current-diff-B ((t (:background "gray70" :foreground "gray0"))))
+ '(ediff-current-diff-A ((t (:background "gray60" :foreground "gray0"))))
+ '(ediff-current-diff-B ((t (:background "gray60" :foreground "gray0"))))
  '(ediff-fine-diff-A ((t (:background nil :inherit nil :underline t :bold t))))
  '(ediff-fine-diff-B ((t (:background nil :inherit nil :underline t :bold t))))
- '(ediff-even-diff-A ((t (:background "gray80" :foreground "gray20"))))
- '(ediff-even-diff-B ((t (:background "gray80" :foreground "gray20"))))
- '(ediff-odd-diff-A ((t (:background "gray80" :foreground "gray20"))))
- '(ediff-odd-diff-B ((t (:background "gray80" :foreground "gray20"))))
+ '(ediff-even-diff-A ((t (:background "gray70" :foreground "gray20"))))
+ '(ediff-even-diff-B ((t (:background "gray70" :foreground "gray20"))))
+ '(ediff-odd-diff-A ((t (:background "gray70" :foreground "gray20"))))
+ '(ediff-odd-diff-B ((t (:background "gray70" :foreground "gray20"))))
 
  ;; ztree
  '(ztreep-diff-model-normal-face ((t (:foreground "gray60"))))
@@ -168,7 +168,13 @@
 
  ;; org mode
  '(org-table ((t (:foreground "gray20"))))
-
+ '(org-level-1 ((t (:underline t))))
+ '(org-level-2 ((t (:underline t))))
+ '(org-level-3 ((t (:underline t))))
+ '(org-level-4 ((t (:underline t))))
+ '(org-level-5 ((t (:underline t))))
+ '(org-level-6 ((t (:underline t))))
+ 
  ;; pinbar
  '(pinbar-default-face ((t (:inherit nil :background "gray100" :foreground nil))))
  '(pinbar-unselected-face ((t (:background "gray100" :foreground "gray30"))))
